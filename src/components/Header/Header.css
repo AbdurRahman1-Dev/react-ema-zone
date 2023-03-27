@@ -1,0 +1,26 @@
+.header{
+  background-color: #1C2B35;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+ul li a{
+  text-decoration: none;
+  /* padding: 0px 15px; */
+  margin-left: 30px;
+  font-size: 20px;
+  color: aliceblue;
+}
