@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Product.css'
 
 const Product = (pro) => {
-  const {name, price, img, seller,ratings} = pro.product
-  // console.log(pro.product);
+  const {name, price,id, img, seller,ratings} = pro.product
+
   return (
     <div className='product'>
       <img src={img} alt="" />
@@ -13,7 +13,7 @@ const Product = (pro) => {
       <p>Manufacturer: {seller}</p>
       <p>Ratings: {ratings}</p>
      </div>
-        <button className='btn'>Add to Cart</button>
+        <button onClick={() => pro.handleAddtoCart(pro.product)} className='btn'>Add to Cart</button>
     </div>
   );
 };
